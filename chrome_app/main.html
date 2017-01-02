@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>Shutter UI</title>
+  </head>
+  <body>
+    <div id="main">
+      <div>
+        <button id="a" type="button" title="Decrease Threshold (alt + -)" accesskey="-"><img src="img/decrease.png" alt="Decrease Threshold"></button>
+        <button id="b" type="button" title="Reset (alt + r)" accesskey="r"><img src="img/reset.png" alt="Reset"></button>
+        <button id="c" type="button" title="Increase Threshold (alt + +)" accesskey="+"><img src="img/increase.png" alt="Increase Threshold"></button>
+      </div>
+      <div>
+        <button id="d" type="button" title="Roll Up (alt + u)" accesskey="u"><img src="img/up.png" alt="Roll Up"></button>
+        <button id="e" type="button" title="Roll Down (alt + d)" accesskey="d"><img src="img/down.png" alt="Roll Down"></button>
+        <button id="f" type="button" title="Start/Pause (alt+s)" accesskey="s" autofocus><img src="img/play_pause.png"></button>
+      </div>
+      <div>
+        <button id="i" type="button" title="Toggle Manual (alt + m)" accesskey="m"><img src="img/manual.png" alt="Toggle Manual"></button>
+        <button id="j" type="button" title="Select All Shutters (alt + a)" accesskey="a"><img src="img/select_all.png" alt="Select All Shutters"></button>
+        <button id="k" type="button" title="Show Information (alt + i)" accesskey="i"><img src="img/info.png" alt="Show Information"></button>
+      </div>
+	  <br><br>
+	  <div>
+		<button id="m" type="button" title="Shutter 1 (alt + 1)" accesskey="1"><img src="img/1.png" alt="1"></button>
+		<button id="n" type="button" title="Shutter 2 (alt + 2)" accesskey="2"><img src="img/2.png" alt="2"></button>
+	  </div>
+	  <div>
+		<button id="o" type="button" title="Shutter 3 (alt + 3)" accesskey="3"><img src="img/3.png" alt="3"></button>
+		<button id="p" type="button" title="Shutter 4 (alt + 4)" accesskey="4"><img src="img/4.png" alt="4"></button>
+	  </div>
+	</div>
+	<div id="information">
+		<p>Mode: <span id="mode"></span></p>
+		<p>Current Light Level: <span id="light_level"></span></p>
+		<p>Light Threshold: <span id="light_threshold"></span></p>
+		<p>Condition: <span id="condition"></span></p>
+		<p>Shutter 1: <span id="shutter1"></span></p>
+		<p>Shutter 2: <span id="shutter2"></span></p>
+		<p>Shutter 3: <span id="shutter3"></span></p>
+		<p>Shutter 4: <span id="shutter4"></span></p>
+	</div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/serial_device.js"></script>
+    <script src="js/shutter.js"></script>
+  </body>
+</html>
