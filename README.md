@@ -1,2 +1,2 @@
-# arduino_shutter_automation
+# Arduino Shutter Automation
 Shutter Automation Project
